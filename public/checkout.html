@@ -1,25 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Buy cool new product</title>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purchase Stubborn Attachments</title>
+
+    <!-- External Resources -->
     <link rel="stylesheet" href="style.css" />
-    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://js.stripe.com/v3/" defer></script>
   </head>
   <body>
-    <section>
-      <div class="product">
-        <img
-          src="https://i.imgur.com/EHyR2nP.png"
-          alt="The cover of Stubborn Attachments"
-        />
-        <div class="description">
-          <h3>Stubborn Attachments</h3>
-          <h5>$20.00</h5>
-        </div>
-      </div>
-      <form action="/create-checkout-session" method="POST">
-        <button type="submit" id="checkout-button">Checkout</button>
-      </form>
-    </section>
+    <!-- Main content -->
+    <main>
+      <section class="product-section">
+        <article class="product">
+          <img
+            src="https://i.imgur.com/EHyR2nP.png"
+            alt="Book cover of Stubborn Attachments by Tyler Cowen"
+            class="product-image"
+          />
+          <div class="product-description">
+            <h3>Stubborn Attachments</h3>
+            <p class="price">$20.00</p>
+          </div>
+        </article>
+
+        <!-- Checkout Form -->
+        <form
+          action="/create-checkout-session"
+          method="POST"
+          class="checkout-form"
+        >
+          <button type="submit" id="checkout-button" class="checkout-btn">
+            Checkout
+          </button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>

@@ -1,0 +1,75 @@
+/* Reset default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main content styling */
+main {
+  max-width: 600px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* Success message section */
+.success-message {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading styles */
+.success-message h1 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph styles */
+.success-message p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Email link styles */
+.support-email {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.support-email:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .success-message {
+    padding: 1.5rem;
+  }
+
+  .success-message h1 {
+    font-size: 1.5rem;
+  }
+
+  .success-message p {
+    font-size: 1rem;
+  }
+}
